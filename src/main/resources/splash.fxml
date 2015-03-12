@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane fx:controller="com.example.SplashController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="268.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@splash.png" />
+         </image>
+      </ImageView>
+      <Rectangle fill="#344352dd" height="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" StackPane.alignment="BOTTOM_LEFT" />
+      <Label fx:id="label" text="Loading..." textFill="WHITE" StackPane.alignment="BOTTOM_LEFT">
+         <padding>
+            <Insets bottom="2.0" left="10.0" />
+         </padding>
+      </Label>
+   </children>
+</StackPane>

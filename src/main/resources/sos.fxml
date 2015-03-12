@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.socialmap.server.gui.controller.SosController">
+   <bottom>
+      <HBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="_cancel" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="取消" HBox.hgrow="ALWAYS" />
+            <Button fx:id="_finish" defaultButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="处理完毕" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </bottom>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <center>
+      <ListView fx:id="_targets" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </BorderPane.margin>
+      </ListView>
+   </center>
+   <top>
+      <TitledPane fx:id="_info" animated="false" collapsible="false" text="求助者信息" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane minHeight="-Infinity" minWidth="-Infinity">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" percentWidth="30.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" percentWidth="70.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="-Infinity" prefHeight="23.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="23.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" prefHeight="23.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" prefHeight="23.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="23.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="BASELINE_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="真实姓名：" />
+                  <Label alignment="BASELINE_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="用户名/ID：" GridPane.rowIndex="2" />
+                  <Label alignment="BASELINE_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="所在位置：" GridPane.rowIndex="3" />
+                  <Label alignment="BASELINE_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="联系电话：" GridPane.rowIndex="4" />
+                  <Label alignment="BASELINE_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="求助原因：" GridPane.rowIndex="1" />
+                  <Label fx:id="_realname" text="Label" GridPane.columnIndex="1" />
+                  <Label fx:id="_reason" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="100.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="_usernameId" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="_position" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="_phone" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+               <rotationAxis>
+                  <Point3D y="1.0" z="1.0" />
+               </rotationAxis>
+            </GridPane>
+         </content>
+      </TitledPane>
+   </top>
+</BorderPane>
